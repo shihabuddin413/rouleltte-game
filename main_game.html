@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main_game.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- particles.js container -->
+
+    <div id="particles-js"></div>
+    <nav>
+      <img class="logo desktop" src="logo.jpg" />
+      <div class="menu-mobile">
+        <div class="logo__head">
+          <img class="logo" src="logo.jpg" />
+          <h3>Roulette Casino</h3>
+        </div>
+        <img class="menu-icon" src="menu_wh.png" alt="menu" />
+        <ul class="deactive dropdown">
+          <li>Rules</li>
+          <li>Help</li>
+          <li>Support</li>
+          <li>Game Type</li>
+        </ul>
+      </div>
+      <ul id="menu-items">
+        <li>Rules</li>
+        <li>Help</li>
+        <li>Support</li>
+        <li>Game Type</li>
+      </ul>
+    </nav>
+    <!-- section 1 intro -->
+    <main class="game">
+      <div class="transection">
+        <h1 class="cr-title">Your Wallet list:</h1>
+        <ul class="cr">
+          <li>
+            <h3>Bella Wallet</h3>
+            <p>Doloremque molli]e vitae</p>
+            <div class="btn-pay">Pay</div>
+          </li>
+          <li>
+            <h3>Eitheram Wallet</h3>
+            <p>Expedita commodi namls magni!</p>
+            <div class="btn-pay">Pay</div>
+          </li>
+          <li>
+            <h3>Btc Roger</h3>
+            <p>quaerat laborum ne.</p>
+            <div class="btn-pay">Pay</div>
+          </li>
+          <li>
+            <h3>Quall wallet</h3>
+            <p>Voluptandae ipsum</p>
+            <div class="btn-pay">Pay</div>
+          </li>
+        </ul>
+
+        <div class="all_trans_cnt">
+          <a href="transection_history.html" class="all_trans"
+            >All Transecion</a
+          >
+        </div>
+      </div>
+
+      <div class="spinner_roulette">
+        <img src="board.png" class="board" />
+      </div>
+
+      <!-- <form> -->
+      <div class="controls">
+        <div class="row1">
+          <div class="item">
+            <label>Balance</label>
+            <input
+              class="input_box"
+              type="text"
+              name="balance"
+              value="5.98520"
+              disabled
+            />
+          </div>
+          <div class="item">
+            <label style="color: transparent">nothing</label>
+            <input class="spin-btn" type="submit" value="SPIN" name="balance" />
+          </div>
+          <div class="item line-break">
+            <label> Winning Chance</label>
+            <input
+              class="input_box"
+              type="text"
+              name="balance"
+              value="49.8%"
+              disabled
+            />
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="item">
+            <label>Betting Amount</label>
+            <input class="input_box" type="text" name="bet_amnt" value="0.05" />
+          </div>
+          <div class="item">
+            <label>Wining Amount</label>
+            <input
+              class="input_box"
+              type="text"
+              name="win_amnt"
+              value="0.2"
+              disabled
+            />
+          </div>
+          <div class="item line-break">
+            <label>Total Game Played</label>
+            <input
+              class="input_box"
+              type="text"
+              name="total_game"
+              value="1002"
+              disabled
+            />
+          </div>
+        </div>
+
+        <div class="row3">
+          <div class="item type line-break">
+            <label style="color: transparent">nothing</label>
+            <div>Bet Type</div>
+          </div>
+          <div class="item">
+            <label>Bet On Color</label>
+            <div class="bet_color_btn">
+              <div class="red">Red</div>
+              <div class="black">Black</div>
+            </div>
+          </div>
+          <div class="item">
+            <label>Bet Odd or even</label>
+            <div class="bet_odd_even">
+              <div class="odd">Odd</div>
+              <div class="even">Even</div>
+            </div>
+          </div>
+        </div>
+        <div class="row4">
+          <div class="item">
+            <label class="num-label">Bet On Number</label>
+            <div class="number line-break">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>12</div>
+              <div>13</div>
+              <div>14</div>
+              <div>15</div>
+              <div>16</div>
+              <div>17</div>
+              <div>18</div>
+              <div>19</div>
+              <div>20</div>
+              <div>21</div>
+              <div>22</div>
+              <div>23</div>
+              <div>24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </form> -->
+    </main>
+
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="main_game.js"></script>
+  </body>
+</html>

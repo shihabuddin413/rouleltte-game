@@ -1,0 +1,530 @@
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.board {
+  animation: turn 10s linear infinite;
+}
+
+.transection {
+  height: 500px;
+  margin: 0;
+  min-width: 300px;
+}
+
+.transection,
+.controls {
+  background: linear-gradient(18deg, #1616160c, #c4c1c109, #0000001c);
+  padding: 0;
+  border-radius: 1rem;
+  margin: 2rem;
+  box-shadow: 0 0 10px #fff;
+}
+
+.btn-pay {
+  margin: 1rem 0.5rem;
+  background: white;
+  color: rgb(21, 16, 36);
+  padding: 0.3rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00000066;
+  font-weight: bold;
+}
+
+.btn-pay:hover {
+  background-color: #55bbff;
+  color: white;
+}
+
+.game {
+  flex-direction: row;
+}
+
+.cr-title {
+  color: rgb(40, 6, 134);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.cr {
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.cr::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.cr::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.cr::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cr::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.cr li {
+  font-size: 1rem;
+  list-style: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cr li:hover {
+  background: linear-gradient(0deg, #ffffff66, transparent);
+}
+
+.cr li h3,
+.cr li p {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: justify;
+}
+.all_trans_cnt {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all_trans {
+  width: max-content;
+  padding: 0.5rem 1rem;
+  background: rgb(247, 0, 152);
+  /* border: 1px solid #fff; */
+  color: rgb(255, 255, 255);
+  border-radius: 10rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cr li:last-child {
+  border-bottom: none;
+  text-align: justify;
+  width: max-content;
+}
+
+@media only screen and (min-width: 800px) {
+  .board {
+    height: 30rem;
+  }
+  .game {
+    flex-direction: row;
+  }
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .input_box {
+    padding: 0.5rem 1rem;
+    width: 100px;
+    background: transparent;
+    border: 2px solid #e3caff;
+    border-radius: 0.4rem;
+    outline: none;
+    color: rgb(0, 225, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .input_box:focus {
+    border: 2px solid rgb(252, 129, 129);
+    color: rgb(252, 129, 129);
+  }
+
+  .item label {
+    color: white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    /* font-weigh
+    t: bold; */
+  }
+
+  .num-label {
+    border-bottom: 2px solid rgb(1, 252, 252);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    width: max-content;
+    font-size: 2rem;
+  }
+
+  .type {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .type div {
+    background-color: rgb(29, 168, 187);
+    color: white;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 80%;
+  }
+
+  .bet_color_btn,
+  .bet_odd_even {
+    display: flex;
+    margin: 0;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+
+  .red {
+    background: rgba(0, 0, 0);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgba(0, 0, 0);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  .black {
+    background: rgba(255, 0, 0);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgba(255, 0, 0);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+
+  .odd {
+    background: rgb(0, 124, 182);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 124, 182);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-right: 1px solid white;
+  }
+  .even {
+    background: rgb(0, 124, 182);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 124, 182);
+
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+
+  .spin-btn {
+    padding: 0.4rem 2rem;
+    background: rgb(0, 225, 255);
+    color: rgb(21, 16, 36);
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    border: none;
+    transition: all 0.3s;
+    border: 4px solid rgb(0, 225, 255);
+    /* font-weight: bolder; */
+    margin: 0;
+    cursor: pointer;
+    width: 90%;
+  }
+
+  .spin-btn:hover {
+    background: rgb(243, 177, 177);
+    border: 4px solid rgb(243, 177, 177);
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+  .number div {
+    border: 2px solid rgb(228, 224, 13);
+    background: rgba(0, 0, 0, 0.5);
+    aspect-ratio: 1/1;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 1rem;
+    border-bottom: 5px solid rgb(228, 224, 13);
+    font-size: 2rem;
+    padding: 0.2rem;
+  }
+
+  .number :nth-child(odd) {
+    border: 2px solid cyan;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-bottom: 5px solid cyan;
+  }
+}
+
+/* // mobile */
+@media only screen and (max-width: 800px) {
+  .spinner_roulette {
+    order: 1;
+  }
+  .board {
+    height: 25rem;
+  }
+  .transection {
+    order: 2;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 3;
+  }
+
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    color: white;
+    padding: 1rem;
+    /* flex-wrap: wrap; */
+  }
+
+  .line-break {
+    width: 100%;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* width: 100%; */
+    /* margin: 0 2rem; */
+  }
+
+  .input_box {
+    padding: 0.5rem 1rem;
+    width: 8rem;
+    background: transparent;
+    border: 2px solid #e3caff;
+    border-radius: 0.4rem;
+    outline: none;
+    color: rgb(0, 225, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .input_box:focus {
+    border: 2px solid rgb(252, 129, 129);
+    color: rgb(252, 129, 129);
+  }
+
+  .item label {
+    color: white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    /* font-weigh
+    t: bold; */
+  }
+
+  .num-label {
+    border-bottom: 2px solid cyan;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+  }
+
+  .type {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .type div {
+    background-color: rgb(29, 168, 187);
+    color: white;
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .bet_color_btn,
+  .bet_odd_even {
+    display: flex;
+    margin: 0;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 1rem;
+    cursor: pointer;
+  }
+
+  .red {
+    background: rgba(0, 0, 0);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgba(0, 0, 0);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+
+  .black {
+    background: rgba(255, 0, 0);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgba(255, 0, 0);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+
+  .odd {
+    background: rgb(0, 124, 182);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 124, 182);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    border-right: 1px solid white;
+  }
+  .even {
+    background: rgb(0, 124, 182);
+    width: 80%;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid rgb(0, 124, 182);
+
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+  }
+
+  .spin-btn {
+    padding: 0.4rem 2rem;
+    background: rgb(0, 225, 255);
+    color: rgb(21, 16, 36);
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    border: none;
+    transition: all 0.3s;
+    border: 4px solid rgb(0, 225, 255);
+    /* font-weight: bolder; */
+    margin: 0;
+    cursor: pointer;
+    width: max-content;
+  }
+
+  .spin-btn:hover {
+    background: rgb(243, 177, 177);
+    border: 4px solid rgb(243, 177, 177);
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .number div {
+    border: 2px solid rgb(228, 224, 13);
+    background: rgba(0, 0, 0, 0.5);
+    aspect-ratio: 1/1;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 1rem;
+    border-bottom: 5px solid rgb(228, 224, 13);
+    font-size: 2rem;
+    padding: 0.2rem;
+  }
+
+  .number :nth-child(odd) {
+    border: 2px solid cyan;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-bottom: 5px solid cyan;
+  }
+
+  /* .dropdown {
+    width: 60% !important;
+  } */
+}
